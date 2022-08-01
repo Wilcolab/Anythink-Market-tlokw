@@ -11,3 +11,13 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 ## First setup
 
 **[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+
+## Setting up as new Environment
+
+- Download Docker
+- Check if Docker is properly installed by running the following commands on the terminal: 
+    docker -v
+    docker-compose -v 
+- Once Docker is proper insatlled in your machine, run the following commands in the project root directory: 
+    docker-compose up
+- If the Docker is running properly it should be able to run and connect to the local database.
