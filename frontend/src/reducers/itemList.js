@@ -30,12 +30,12 @@ const reducer = (state = {}, action) => {
           return item;
         }),
       };
-      case UPDATE_TITLE_SEARCH_TERM:
+    case UPDATE_TITLE_SEARCH_TERM:
       return {
         ...state,
         titleSearchTerm: action.payload.titleSearchTerm,
       };
-      case SET_PAGE:
+    case SET_PAGE:
       return {
         ...state,
         items: action.payload.items,
