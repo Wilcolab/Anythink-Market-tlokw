@@ -318,7 +318,7 @@ router.post("/:item/comments", auth.required, function (req, res, next) {
 
 router.delete(
   "/:item/comments/:comment",
-  auth.required,
+  auth.required, 
   function (req, res, next) {
     if (req.comment.seller.toString() === req.payload.id.toString()) {
       req.item.comments.remove(req.comment._id);
